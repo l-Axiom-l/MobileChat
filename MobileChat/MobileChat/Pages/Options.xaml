@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileChat.Options">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Options"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black" RowSpacing="0" ColumnSpacing="0" ColumnDefinitions="*, *" RowDefinitions="40,60,60,60,60,60,60,60,*">
+            <Button x:Name="SaveHistory" Text="SaveChatHistory" Grid.ColumnSpan="2" Grid.Row="0" Margin="0,5,0,-5" Padding="0,0,0,0"></Button>
+            <Button x:Name="LoadHistory" Text="LoadChatHistory" Grid.ColumnSpan="2" Grid.Row="1"></Button>
+
+            <Button x:Name="StartClient" Text="StartClient" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,5,0,-5" Padding="0,0,0,0"></Button>
+            <Button x:Name="StartServer" Text="StartServer" Grid.ColumnSpan="2" Grid.Row="3"></Button>
+
+            <Entry x:Name="ServerIPInput" Text="ServerIP" TextColor="White" Grid.ColumnSpan ="2" Grid.Row="4"></Entry>
+            <Entry x:Name="ClientIPInput" Text="ClientIP" TextColor="White" Grid.ColumnSpan ="2" Grid.Row="5"></Entry>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
