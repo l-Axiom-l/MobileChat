@@ -106,7 +106,7 @@ namespace MobileChat
             
             foreach (KeyValuePair<string, string> contact in contacts)
             {
-                File.AppendAllText(Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/Contacts.txt", contact.Key + "-" + contact.Value);
+                File.AppendAllText(Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/Contacts.txt", contact.Key + "-" + contact.Value + "\n");
             }
         }
     }
